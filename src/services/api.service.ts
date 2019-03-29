@@ -12,6 +12,8 @@ export class ApiService {
      * Metódo responsável pelo retorno dos dados arquimedes
      * 
      * @return `Observable` como provider do retorno dos dados
+     * 
+     * Utilizar o .subscribe para consumir os dados quando realizar a chamada deste método
      */  
     public get() {
     let url = "https://api.emeter.com.br:8443/emeter/api/v1/arquimedes/dados";
