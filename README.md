@@ -1,3 +1,4 @@
+![alt text](https://vetorlog.com/wp-content/themes/vetorlog/images/logo_3.png)
 # Vetorlog - Teste Front-End
 
 Esse projeto foi desenvolvido com o intuito de avaliar a escrita dos códigos e a tomada de decisão dos candidatos.
