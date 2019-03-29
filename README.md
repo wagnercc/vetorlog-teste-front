@@ -1,27 +1,41 @@
-# TesteVetorlog
+# Vetorlog - Teste Front-End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
+Esse projeto foi desenvolvido com o intuito de avaliar a escrita dos códigos e a tomada de decisão dos candidatos.
 
-## Development server
+## Explicação do Projeto
+Ao clonar ou baixar o projeto, você deverá rodar o comando 'npm-install' para instalar os pacotes.
+No projeto, existe uma pasta chamada 'services', onde a API já está pronta para ser utilizada, você só deverá fazer a chamada da mesma.
+O candidato, deverá desenvolver um component para exibir os dados da API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### O que deve ser feito
+  - Desenvolver uma solução que seja 'apresentável' (divs, estilização... use e abuse da sua criatividade!)
+  - Clonar o repositório ou baixar o projeto
+  - Criar um novo component para desenvolver a solução
+  - Utilizar e inserir o Bootstrap no projeto, seja pelo angular-cli ou por CDN (pelo HTML)
+  - Realizar a chamada da api.service para obter os dados da API
+  - Dentro do objeto retornado, apenas dois que será necessário para este projeto, que são graficoGeracao e equivalencias
+  - Deverá criar uma tabela para exibir os dados do objeto 'graficoGeracao'
+  - Deverá criar um carousel para exibir a imagem e o texto do array de objetos 'equivalencias'
+  - Ao término do teste, subir as alterações neste mesmo repositório, em uma branch a parte
+  
+## Regras
+  A tabela deverá conter os seguintes campos:
+  - Índice (1, 2, 3...)
+  - Data
+  - Valor Geração
+ ----------------------------------------------------------------------------
+ O Carousel, deverá utilizar os seguintes dados:
+ - text
+ - img
+  
+## O que iremos avaliar
+- As diretivas usadas para resolução dos problema
+- A escrita do código
+- Comentários no código
+- Se o layout está 'apresentável'
+- Se o código está legível
+- Tomada de decisão
 
-## Code scaffolding
+Qualquer dúvida, enviar um e-mail para wagner@vetorlog.com
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Boa sorte e se divirtam!
