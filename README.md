@@ -1,12 +1,13 @@
 <p align="center">
   <img src="https://vetorlog.com/wp-content/themes/vetorlog/images/logo_3.png"/>
+  </br>
+  <b>Teste Front-End</b>
+  
 </p>
-
-# Vetorlog - Teste Front-End
 
 Esse projeto foi desenvolvido com o intuito de avaliar a escrita dos códigos e a tomada de decisão dos candidatos.
 
-## Explicação do Projeto
+### Explicação do Projeto
 Ao clonar ou baixar o projeto, você deverá rodar o comando 'npm-install' para instalar os pacotes.
 No projeto, existe uma pasta chamada 'services', onde a API já está pronta para ser utilizada, você só deverá fazer a chamada da mesma.
 O candidato, deverá desenvolver um component para exibir os dados da API.
@@ -22,7 +23,7 @@ O candidato, deverá desenvolver um component para exibir os dados da API.
   - Deverá criar um carousel para exibir a imagem e o texto do array de objetos 'equivalencias'
   - Ao término do teste, subir as alterações neste mesmo repositório, em uma branch a parte
   
-## Regras
+### Regras
   A tabela deverá conter os seguintes campos:
   - Índice (1, 2, 3...)
   - Data
@@ -32,7 +33,7 @@ O candidato, deverá desenvolver um component para exibir os dados da API.
  - text
  - img
   
-## O que iremos avaliar
+### O que iremos avaliar
 - As diretivas usadas para resolução dos problema
 - A escrita do código
 - Comentários no código
