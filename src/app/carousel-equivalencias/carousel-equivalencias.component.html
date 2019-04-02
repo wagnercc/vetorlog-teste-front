@@ -1,0 +1,10 @@
+<ngb-carousel #carousel>
+  <ng-template ngbSlide *ngFor="let equivalencia of equivalencias">
+  <img class="d-block w-100" src="{{equivalencia.img}}" alt="{{equivalencia.text}}"> 
+  <div class="carousel-caption d-none d-md-block">
+    <div class="alert alert-light">
+      <p>{{equivalencia.text}}</p>
+    </div>
+  </div>
+  </ng-template>
+</ngb-carousel> 

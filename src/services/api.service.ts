@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+import { map, switchMap, catchError, mergeMap, tap } from 'rxjs/operators';
+
 @Injectable({
     providedIn: 'root'
   })
@@ -29,6 +31,14 @@ export class ApiService {
         headers: header
     };
     
-    return this.httpService.get(url, option);
-    }
+    ///return this.httpService.get(url, option);
+    /**
+     * log da estrutura do dado fornecida pelo webservice
+     * essa estrutura foi utilizada como referencia para criar as classe no model
+     */
+    return  this.httpService.get(url, option)
+                .pipe(
+                  tap(console.log)
+                );
+  }
 }
