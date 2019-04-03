@@ -1,0 +1,26 @@
+<div class="text-center">
+  <hr>
+  <a class="font-weight-bold" style="color: #081963;">
+    Tabela referente aos dados do objeto 'graficoGeracao'.
+  </a>
+  <hr>
+  <p *ngIf='loading' class="font-weight-bold text-uppercase">loading...</p>
+  <table class="table table-striped text-center table-condensed">
+    <thead class="">
+      <tr>
+        <th scope="col">Índice</th>
+        <th scope="col">Data</th>
+        <th scope="col">Valor Geracao</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="data">
+      <!--Por se tratar de apenas 2 objetos do JSON, resolvi pegar 
+          direto o conteúdo desses objetos.-->
+      <tr *ngFor="let d of data.graficoGeracao | keyvalue; index as i">
+        <th scope="row">{{i + 1}}</th><!--Acho que não era assim-->
+        <td>{{ d.key }}</td>          <!--o valor do campo id estava nulo-->
+        <td>{{ d.value }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
