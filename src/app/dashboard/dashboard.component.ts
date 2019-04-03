@@ -16,11 +16,14 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.get();
   }
-  //Método para pegar os dados da API
+  //Método para pegar os dados da API. Foi implementado o loading, com o objetivo de 
+  //aparecer um ícone e a mensagem de carregando, enquanto espera o objetos 
+  //vindos da API. MAS, ao tentar instalar os pacotes dos ícones tive sérios 
+  //problemas. Então, só tem a mensagem rs
   get(){
     this.loading = true;
     this.apiService.get().subscribe(data => {
-      this.data = data;
+      this.data = data; //promises.... acredito eu
     },
     error => {console.log(error)},
     ()=>{

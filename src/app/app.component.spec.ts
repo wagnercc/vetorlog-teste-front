@@ -1,7 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-
+/*Ops, não foi elaborado nenhum teste!! 
+  A noticia boa é que eu tentei implementar, porém não tive tempo de terminar.
+  Isso, inclusive, será meu próximo foco de estudos.
+  Eu estou ciente de que poderia ter feito muito mais coisas pra acrescentar.
+  Só que esse foi o meu primeiro contato com o angular e o segundo com essas
+  "novas tecnologias". Enfim, espero que tenha suprido as expectativas 
+  pq a vontade de vir a somar na equipe é GRANDE. Foram quase duas noites
+  sem dormir, mas valeu cada segundo pelos aprendizados. Obrigado!!*/
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({

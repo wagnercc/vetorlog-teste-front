@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   navbarOpen = false;
-
+//Método para fazer "abrir" o botão do menu, quando responsivo.
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }

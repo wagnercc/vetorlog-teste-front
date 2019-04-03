@@ -15,11 +15,11 @@
     </thead>
     <tbody *ngIf="data">
       <!--Por se tratar de apenas 2 objetos do JSON, resolvi pegar 
-          direto o conteúdo desses objetos.-->
+          direto o conteúdo desses objetos. E não do jeito mais organizacional.-->
       <tr *ngFor="let d of data.graficoGeracao | keyvalue; index as i">
-        <th scope="row">{{i + 1}}</th><!--Acho que não era assim-->
-        <td>{{ d.key }}</td>          <!--o valor do campo id estava nulo-->
-        <td>{{ d.value }}</td>
+        <th scope="row">{{i + 1}}</th><!--Linha 20: Acho que não era pra fazer assim-->
+        <td>{{ d.key }}</td>          <!--o valor do campo id estava nulo... -->
+        <td>{{ d.value }}</td>        <!--improvisei ja que não consegui do jeito certo rs-->
       </tr>
     </tbody>
   </table>

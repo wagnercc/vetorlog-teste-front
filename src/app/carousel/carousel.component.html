@@ -5,13 +5,17 @@
   <p *ngIf='loading' class="font-weight-bold text-uppercase">loading...</p>
   <ngb-carousel *ngIf="data" class="text-black" style="background-color:black ">
     <ng-template ngbSlide *ngFor="let d of data.equivalencias">
-      <img class="w-100" [src]="d.img" alt="algo">
+      <img class="img-size" [src]="d.img" alt="algo">
       <div class="carousel-caption d-none d-md-block hide">
         <div class="d-flex justify-content-center">
-          <p class="text-center">{{ d.text }} </p>
+          <p>{{ d.text }} </p>
         </div>
       </div>
     </ng-template>
   </ngb-carousel>
 </div>
+<!--A imagem no mobile não ficou boa, mas sei o motivo (Media Query). 
+    E se tivesse usado um <img class="w-100"...> ela ficaria
+    bacana!! Mas sem ser mobile, a imagem com "w-100" fica muito grande. 
+    Não ficou legal.-->
 
