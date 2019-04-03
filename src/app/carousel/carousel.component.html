@@ -1,0 +1,17 @@
+<hr>
+<div class="text-center">
+  <span class="text-left font-weight-bold contrast text-left" style="color: #081963;">Carousel</span>
+  <hr>
+  <p *ngIf='loading' class="font-weight-bold text-uppercase">loading...</p>
+  <ngb-carousel *ngIf="data" class="text-black" style="background-color:black ">
+    <ng-template ngbSlide *ngFor="let d of data.equivalencias">
+      <img class="w-100" [src]="d.img" alt="algo">
+      <div class="carousel-caption d-none d-md-block hide">
+        <div class="d-flex justify-content-center">
+          <p class="text-center">{{ d.text }} </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
