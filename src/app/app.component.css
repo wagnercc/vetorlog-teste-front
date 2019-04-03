@@ -1,0 +1,21 @@
+.nav-option{
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    font-size: 15pt;
+    font-weight: 500;    
+}
+.img-size-logo{
+    width: 100px;
+}
+.fade 
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+        border-bottom: 2px solid rgb(255, 136, 0);
+}
+

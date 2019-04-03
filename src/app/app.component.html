@@ -1,7 +1,24 @@
-<div style="text-align: center">
-  <h1>
-    Seja bem vindo ao teste da Vetorlog!
-  </h1>
-  <h2>Se trata de um teste bem simples, as regras estão anexadas no github.</h2>
-  <h3>Se divirtam!</h3>
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img routerLink="/home" class="img-size-logo" 
+  src="https://vetorlog.com/wp-content/themes/vetorlog/images/logo_3.png">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+  data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+  aria-expanded="false" aria-label="Toggle navigation"
+  (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup"
+  [ngClass]="{ 'show': navbarOpen }">
+    <div class="navbar-nav hover-underline-menu" id="navbarNavAltMarkup">
+      <a class="nav-item nav-link active fade" routerLink="/home"
+      (click)="navbarOpen=false">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link fade" routerLink="/dashboard"
+      (click)="navbarOpen=false">Tabela</a>
+      <a class="nav-item nav-link fade" routerLink="/carousel"
+      (click)="navbarOpen=false">Carrossel</a>
+    </div>
+  </div>
+</nav>
 </div>
+<router-outlet></router-outlet> 
